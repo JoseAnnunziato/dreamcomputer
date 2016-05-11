@@ -1,1 +1,19 @@
-$('#datepicker').datepicker();​.
+/* Custom style adds */
+
+hr{
+    margin-left:0px;
+    text-align: left;
+}
+.form-fields-radio-inputs-stacked{
+    padding-left:20px !important;
+}
+.checkbox.form-fields-roles-checkbox{
+    margin-top:1px;
+    margin-bottom:1px;
+}
+.radio.form-fields-licence-radio{
+    margin-top:1px;
+    margin-bottom:1px;
+    font-weight: 400;
+}
+
