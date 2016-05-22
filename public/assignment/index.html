@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="FormBuilderApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- For Mobile browsers -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Index page</title>
+
+    <!--------------- STYLE SHEETS ------------------!>
+    <!-- Bootstrap CSS library CDN -->
+    <link href="https://maxcdn.boostrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="css/dashboard.css" rel="stylesheet">
+    <!-- Custom style sheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!--------------- CORE JS and ANGULAR Dependencies ------------------!>
+        <!-- AngularJS library CDN -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <!-- AngularJS Routing library CDN -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.js"></script>
+    <!-- jQuery JavaScript library CDN -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <!-- Bootstrap Javascript library CDN -->
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+    <!-- app.js Import-->
+    <script src="app.js"></script>
+
+    <!-- config.js Import -->
+    <script src="config.js"></script>
+    <!-- Load Services js fies here -->
+    <script src="services/user.service.client.js"></script>
+    <script src="services/forms.service.client.js"></script>
+
+    <!------------------ CONTROLLERS Import ------------------------>
+    <script src="views/main/main.controller.js"></script>
+    <script src="views/header/header.controller.js"></script>
+    <script src="views/sidebar/sidebar.controller.js"></script>
+    <script src="views/admin/admin.controller.js"></script>
+    <script src="views/forms/form-fields.controller.js"></script>
+    <script src="views/forms/forms.controller.js"></script>
+    <script src="views/users/login.controller.js"></script>
+    <script src="views/users/profile.controller.js"></script>
+    <script src="views/users/register.controller.js"></script>
+
+    <!-- Angular autocomplete -->
+    <link href="css/angucomplete-alt.css" rel="stylesheet"/>
+
+    <!-- Angular Wysiwyg Editor (Textangualr module) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
+    <link href="css/textAngular.css" rel="stylesheet"/>
+    <script src="js/textAngular-rangy.min.js"></script>
+    <script src="js/textAngular-sanitize.min.js"></script>
+    <script src="js/textAngular.min.js"></script>
+</head>
+
+<body data-ng-controller="MainController">
+<div data-ng-include="'views/header/header.view.html'"></div>
+<div class="container-fluid">
+    <div class="row">
+        <div data-ng-include="'views/sidebar/sidebar.view.html'"></div>
+        <div data-ng-view></div>
+    </div>
+</div>
+meow
+</body>
+</html>
