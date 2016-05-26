@@ -5,7 +5,7 @@
 (function () {
     'use strict';
     angular
-        .module("FormAppBuilder")
+        .module("FormBuilderApp")
         .factory("FormService", FormService);
 
     function FormService($rootScope) {
@@ -62,6 +62,4 @@
             callback(form);
             }
         }
-    }
-
-})();
+});

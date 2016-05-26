@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-ng-app="FormBuilderApp">
+<html lang="en" ng-app="FormBuilderApp">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,23 +11,24 @@
 
     <!--------------- STYLE SHEETS ------------------!>
     <!-- Bootstrap CSS library CDN -->
-    <link href="https://maxcdn.boostrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <!-- Bootstrap core CSS -->
     <link href="css/dashboard.css" rel="stylesheet">
     <!-- Custom style sheet -->
     <link href="css/style.css" rel="stylesheet">
 
     <!--------------- CORE JS and ANGULAR Dependencies ------------------!>
+        <!-- jQuery JavaScript library CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
         <!-- AngularJS library CDN -->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular.js"></script>
     <!-- AngularJS Routing library CDN -->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.js"></script>
-    <!-- jQuery JavaScript library CDN -->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-route.js"></script>
     <!-- Bootstrap Javascript library CDN -->
-    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
+    
     <!-- app.js Import-->
     <script src="app.js"></script>
 
@@ -52,14 +53,13 @@
     <link href="css/angucomplete-alt.css" rel="stylesheet"/>
 
     <!-- Angular Wysiwyg Editor (Textangualr module) -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
     <link href="css/textAngular.css" rel="stylesheet"/>
     <script src="js/textAngular-rangy.min.js"></script>
     <script src="js/textAngular-sanitize.min.js"></script>
     <script src="js/textAngular.min.js"></script>
 </head>
 
-<body data-ng-controller="MainController">
+<body ng-controller="MainController">
 <div data-ng-include="'views/header/header.view.html'"></div>
 <div class="container-fluid">
     <div class="row">

@@ -2,12 +2,13 @@
  * Created by Rammer on 5/18/16.
  */
 
-(function(){
+(function() {
     'use strict';
     angular
         .module("FormBuilderApp")
-        .controller("MainController", mainController);
+        .controller("MainController", MainController);
 
-    function mainController($scope, $location) {}
-
-})();
+    function MainController($scope, $location) {
+        $scope.$location = $location;
+    }
+});

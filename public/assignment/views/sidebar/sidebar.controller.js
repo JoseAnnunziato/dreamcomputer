@@ -3,16 +3,11 @@
  */
 
 (function(){
+    'use strict';
     angular
         .module("FormBuilderApp")
-        .controller("SidebarController", sidebarController);
+        .controller("SidebarController", SidebarController);
 
-    function sidebarController($location) {
-        var foo = this;
-
-        function init() {
-            foo.$location = $location;
-        }
-        init();
+    function SidebarController() {
     }
-})();
+});

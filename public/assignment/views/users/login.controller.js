@@ -8,7 +8,7 @@
         .module("FormBuilderApp")
         .controller("LoginController", LoginController);
 
-    function LoginController($scope, $rootscope, $location, UserService) {
+    function LoginController($scope, $rootScope, $location, UserService) {
         $scope.login = login;
 
         function login() {
@@ -20,7 +20,7 @@
                     }
                 }
             });
-            }
-
         }
-})();
+
+    }
+});

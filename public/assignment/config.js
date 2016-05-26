@@ -3,11 +3,12 @@
  */
 
 (function() {
+    "use strict";
     angular
         .module("FormBuilderApp")
-        .config(configure);
+        .config(Configure);
 
-    function configure($routeProvider) {
+    function Configure($routeProvider) {
         $routeProvider
             .when("/register", {
                 templateUrl: "views/users/register.view.html",

@@ -2,28 +2,19 @@
  * Created by Rammer on 5/18/16.
  */
 
-(function(){
+(function () {
+    'use strict';
     angular
         .module("FormBuilderApp")
-        .controller("HeaderController", headerController);
+        .controller("HeaderController", HeaderController);
 
-    function headerController($location, UserService) {
-        var foo = this;
+    function HeaderController($scope, $rootScope, $location) {
 
-        foo.logout = logout;
-
-        function init() {
-            foo.$location = $location;
-        }
-        init();
+        $scope.logout = logout;
 
         function logout() {
-            UserService
-                .logout()
-                .then(function() {
-                    UserService.setCurrentUser(null);
-                    $location.url("/home");
-                });
+            $rootScope.currentUser = null;
+            $location.url("/home");
         }
     }
-})();
+});
