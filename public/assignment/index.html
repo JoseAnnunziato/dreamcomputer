@@ -52,11 +52,6 @@
     <!-- Angular autocomplete -->
     <link href="css/angucomplete-alt.css" rel="stylesheet"/>
 
-    <!-- Angular Wysiwyg Editor (Textangualr module) -->
-    <link href="css/textAngular.css" rel="stylesheet"/>
-    <script src="js/textAngular-rangy.min.js"></script>
-    <script src="js/textAngular-sanitize.min.js"></script>
-    <script src="js/textAngular.min.js"></script>
 </head>
 
 <body ng-controller="MainController">
@@ -64,9 +59,12 @@
 <div class="container-fluid">
     <div class="row">
         <div data-ng-include="'views/sidebar/sidebar.view.html'"></div>
-        <div data-ng-view></div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <div data-ng-view></div>
+        </div>
     </div>
+    <a href="#/register">Register</a>
+    meow
 </div>
-meow
 </body>
 </html>
