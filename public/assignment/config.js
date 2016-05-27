@@ -50,11 +50,11 @@
         .config(function($routeProvider) {
         $routeProvider
             .when("/register", {
-                templateUrl: "register.view.html",
+                templateUrl: "views/users/register.view.html",
                 controller: "RegisterController"
             })
             .when("/login", {
-                templateUrl: "login.view.html",
+                templateUrl: "views/users/login.view.html",
                 controller: "LoginController"
             })
             .when("/profile", {
@@ -77,6 +77,8 @@
                 templateUrl: "views/forms/form-fields.view.html",
                 controller: "Form-FieldsController"
             })
-            .otherwise("/home")
-})
+            .otherwise({
+                redirectTo: "/home"
+            })
+    })
 })();

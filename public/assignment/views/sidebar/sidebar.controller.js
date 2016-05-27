@@ -10,7 +10,7 @@
 
     function SidebarController() {
     }
-});
+})();
 **/
 
 app.controller('SidebarController', function($scope){
