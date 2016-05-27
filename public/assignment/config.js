@@ -44,10 +44,10 @@
 })();
  **/
 
+(function () {
 
-var app = angular.module('FormBuilderApp', ["ngRoute"]);
-
-app.config(function($routeProvider) {
+    angular.module('FormBuilderApp')
+        .config(function($routeProvider) {
         $routeProvider
             .when("/register", {
                 templateUrl: "register.view.html",
@@ -78,4 +78,5 @@ app.config(function($routeProvider) {
                 controller: "Form-FieldsController"
             })
             .otherwise("/home")
-});
+})
+})();
